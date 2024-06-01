@@ -1,0 +1,9 @@
+WindowControl.cpp:128 05/26 2024 15-42-52 ERROR: Current Image Is NULLPTR
+Main.cpp:11 05/26 2024 15-42-54 NOTE: program starts.
+FileControl.cpp:63 05/26 2024 15-42-54 NOTE: 2 files listed.
+FileControl.cpp:143 05/26 2024 15-42-54 WARNING: Failed to load image! Path: C:\Users\User\å½±ç‰‡\Captures\masterduel 2024_5_26 ¤U¤È 03_42_25.png
+FileControl.cpp:143 05/26 2024 15-42-54 WARNING: Failed to load image! Path: C:\Users\User\å½±ç‰‡\Captures\masterduel 2024_3_19 ¤W¤È 12_55_57.png
+Chunk.cpp:47 05/26 2024 15-42-54 ERROR:  can't be added to chunk
+Chunk.cpp:47 05/26 2024 15-42-54 ERROR: can't be added to chunk
+FileControl.cpp:100 05/26 2024 15-42-54 NOTE: 0. chunk is loaded.
+WindowControl.cpp:128 05/26 2024 15-42-54 ERROR: Current Image Is NULLPTR
