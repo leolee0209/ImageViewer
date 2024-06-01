@@ -44,7 +44,8 @@ bool EventHandle::HandleEvents(WindowControl* windowC, FileControl* fileC)
 			break;
 		case SDL_MOUSEWHEEL:
 			if (ctrl) {
-				windowC->changeZoom({ e.wheel.mouseX,e.wheel.mouseY }, ev::wheelEvent(e));
+				Gui::Point zoomP = { e.wheel.mouseX,e.wheel.mouseY };
+				windowC->changeZoom(zoomP, ev::wheelEvent(e));
 				std::cout << e.wheel.mouseX << "," << e.wheel.mouseY << "\n";
 			}
 			break;
@@ -78,7 +79,7 @@ void EventHandle::LastEvent(FileControl* fileC, WindowControl* windowC) {
 	windowC->resetZoom();
 	windowC->UpdateImage();
 }
-void EventHandle::ClickEvent(SDL_Event e,FileControl* fileC, WindowControl* windowC) {
+void EventHandle::ClickEvent(SDL_Event e, FileControl* fileC, WindowControl* windowC) {
 	int x = e.motion.x, y = e.motion.y;
 	for (int i = 0; i < windowC->buttons.size(); i++) {
 		Gui::Rect r = windowC->buttons[i]->range;
@@ -87,6 +88,6 @@ void EventHandle::ClickEvent(SDL_Event e,FileControl* fileC, WindowControl* wind
 			break;
 		}
 	}
-	
+
 }
 

@@ -193,7 +193,7 @@ SDL_Renderer* WindowControl::get_renderer()
 	return renderer;
 }
 
-void WindowControl::changeZoom(SDL_Point clickP, float num) {
+void WindowControl::changeZoom(Point clickP, float num) {
 	if (zoomLevel + num >= 100) {
 
 		zoomPoint.x = clickP.x - dstRect->x;

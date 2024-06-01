@@ -19,7 +19,7 @@ private:
 	SDL_Rect* srcRect;
 	Gui::Label* title;
 
-	SDL_Point zoomPoint;
+	Gui::Point zoomPoint;
 
 	void UpdateUI();
 	void ReloadRect(bool);
@@ -34,7 +34,7 @@ public:
 	bool InitWindow(FileControl*);
 	bool loadMedia(std::string);
 	bool close();
-	void changeZoom(SDL_Point, float);
+	void changeZoom(Gui::Point, float);
 	void resetZoom();
 	void initUI();
 };
